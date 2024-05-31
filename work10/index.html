@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript演習 bootstrap!</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sign-in.css">
+    <link rel="canonical" href="https://getbootstrap.jp/docs/5.0/examples/sign-in/">
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JavaScript</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#featurette">Featurette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#signin">Sign-in</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" src="" />
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bd-placeholder-img" src="" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bd-placeholder-img" src="" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bd-placeholder-img" src="" />
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One For All All For One</h1>
+                        <p>Plus Ultra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- team -->
+    <hr class="divider" id="team">
+
+    <div class="container">
+        <div class="text-center">
+            <h2 class="display-4">Team Profeel</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="" />
+                    <h4></h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="" />
+                    <h4></h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="" />
+                    <h4></h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="" />
+                    <h4></h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <p class="large text-muted">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- featurette -->
+    <div class="container">
+
+        <hr class="divider" id="featurette">
+
+        <div class="row featurette featurette-item">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading.</h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5">
+                <img id="featurette1" class="mx-auto" src="" />
+            </div>
+        </div>
+
+        <hr class="featurette">
+
+        <div class="row featurette featurette-item">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Oh yeah, it’s that good.</h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img id="featurette2" class="mx-auto" src="" />
+            </div>
+        </div>
+
+        <hr class="featurette">
+
+        <div class="row featurette featurette-item">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">And lastly, this one.</h2>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+                    intended to be actually read, simply here to give you a better view of what this would look like
+                    with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <img id="featurette3" class="mx-auto" src="" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- signin -->
+        <hr class="divider" id="signin">
+
+        <form>
+            <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2023</p>
+        </form>
+
+
+
+    </div>
+
+    <!-- footer -->
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="md1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body">
+                    <img src="" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- loading -->
+    <div id="loading" class="position-absolute top-0 start-0 w-100 h-100 d-none">
+        <div class="text-center position-absolute top-50 start-50 w-100 translate-middle">
+            <div class="spinner-grow text-light" role="status"></div>
+            <div class="spinner-grow text-light" role="status"></div>
+            <div class="spinner-grow text-light" role="status"></div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
